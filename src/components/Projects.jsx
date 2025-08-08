@@ -1,7 +1,15 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { projects } from "../data/projects"
 
 const Projects = () => {
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setExpandedImage(null)
+    }
+    window.addEventListener("keydown", handleEsc)
+    return () => window.removeEventListener("keydown", handleEsc)
+  }, [])
+
   const [expandedImage, setExpandedImage] = useState(null)
   return (
     <>

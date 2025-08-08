@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Navbar from "./components/Navbar"
 import IntroSection from "./components/IntroSection"
 import AboutMe from "./components/AboutMe"
@@ -9,14 +9,6 @@ import Contact from "./components/Contact"
 export default function App() {
   useEffect(() => {
     document.documentElement.classList.add("scroll-smooth")
-  }, [])
-
-  useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === "Escape") setExpandedImage(null)
-    }
-    window.addEventListener("keydown", handleEsc)
-    return () => window.removeEventListener("keydown", handleEsc)
   }, [])
 
   const scrollToSection = (sectionIndex) => {
