@@ -12,10 +12,39 @@ const projects = [
   {
     preview: "/chess-demo.gif",
     title: "Chess",
-    subtitle: "2D  Game",
+    subtitle: "2D Game",
     description:
       "Turn-based chess game using C++ and SDL2. Supports legal move logic, piece selection, and board rendering with basic UI feedback.",
     github: "https://github.com/rrajvardhan/sdl-chess",
+  },
+
+  {
+    preview: "/fossilfury-demo.gif",
+    title: "Fossil Fury",
+    subtitle: "2D Side-scroller Prototype",
+    description:
+      "A 2D side-scroller shooting game prototype made with JavaScript.",
+    github: "https://github.com/rrajvardhan/fossil-fury",
+    live: "https://fossilfury.onrender.com",
+  },
+
+  {
+    preview: "/kaiwa-demo.png",
+    title: "KAIWA",
+    subtitle: "Real-time Chat App",
+    description:
+      "A real-time chat application built with React for, Node.js and Express for the backend, MongoDB , and Socket.io for real-time messaging. Includes user authentication and a responsive UI.",
+    github: "https://github.com/rrajvardhan/KAIWA",
+    live: "https://kaiwa.onrender.com",
+  },
+
+  {
+    preview: "/neovim-config.gif",
+    title: "Neovim Config",
+    subtitle: "How to exit Vim? Still searching...",
+    description:
+      "My personal Neovim config — a Frankenstein’s monster of hacked-together plugins, random Lua snippets, and weird hacks that somehow just work.",
+    github: "https://github.com/rrajvardhan/neovim-config",
   },
 ]
 
@@ -183,13 +212,13 @@ export default function App() {
             </p>
 
             <p className="mb-4 sm:mb-6">
-              primarily a C++ guy, but i’ve picked up enough frontend (HTML,
+              primarily a C++ guy, but i've picked up enough frontend (HTML,
               CSS, JS, React) to throw together UIs that actually behave — just
               stuff that works.
             </p>
 
             <p className="mb-4 sm:mb-6">
-              curiosity drives me — whether it’s untangling weird bugs,
+              curiosity drives me — whether it's untangling weird bugs,
               experimenting with ideas that might fail spectacularly, or
               learning something new because it looks fun.
             </p>
@@ -263,11 +292,11 @@ export default function App() {
           Projects
         </h4>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 auto-rows-fr">
           {projects.map((project, i) => (
             <div
               key={i}
-              className="border-2 border-black p-4 sm:p-6 shadow-md bg-white flex flex-col justify-between"
+              className="border-2 border-black p-4 sm:p-6 shadow-md bg-white flex flex-col"
             >
               <div className="flex justify-between items-center mb-4">
                 <p className="text-xs sm:text-sm font-bold text-neutral-800">
@@ -278,7 +307,7 @@ export default function App() {
                 </span>
               </div>
               {/* PROJECTS PREVIEW BANNER */}
-              <div>
+              <div className="flex-1 flex flex-col">
                 <div className="aspect-video w-full bg-neutral-200 mb-4 overflow-hidden relative group border-2">
                   {/\.(gif|png|jpe?g)$/i.test(project.preview) ? (
                     <>
@@ -311,7 +340,7 @@ export default function App() {
                   {project.title}
                 </h3>
 
-                <p className="mb-4 text-xs sm:text-sm text-neutral-700 font-medium leading-relaxed">
+                <p className="mb-4 text-xs sm:text-sm text-neutral-700 font-medium leading-relaxed flex-1">
                   {project.description}
                 </p>
               </div>
