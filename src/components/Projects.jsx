@@ -45,7 +45,7 @@ const Projects = () => {
                         className="w-full h-full object-cover cursor-pointer transition-transform group-hover:scale-105"
                       />
                       <div
-                        className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-all duration-300 flex items-center justify-center"
+                        className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-all duration-300 flex items-center justify-center cursor-pointer"
                         onClick={() => setExpandedImage(project.preview)}
                       >
                         <div className="bg-white/90 px-2 sm:px-3 py-1 sm:py-2 border-2 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -27,9 +27,16 @@ const AboutMe = ({ scrollToSection }) => {
             </p>
 
             <p className="mb-4 sm:mb-6">
-              did a cybersecurity specialization during my B.Tech — let’s just
-              say i know how to break stuff on paper, but in practice, google’s
-              still my best friend.
+              comfortable with java and python for when the situation calls for
+              it, but systems programming is where i want to be. aspiring to get
+              really good with go and rust alongside C++. give me something
+              performance-critical to solve — that's the stuff i actually want
+              to spend my time on.
+            </p>
+
+            <p className="mb-4 sm:mb-6">
+              specializing in cybersecurity during my B.Tech — I know how to
+              break stuff on paper and, yes, Google still helps me in practice.
             </p>
 
             <p className="mb-4 sm:mb-6">
