@@ -32,7 +32,7 @@ export const projects = [
     title: "KAIWA",
     subtitle: "Real-time Chat App",
     description:
-      "A real-time chat application built with React for, Node.js and Express for the backend, MongoDB , and Socket.io for real-time messaging. Includes user authentication and a responsive UI.",
+      "A real-time chat application built with React for, Node.js and Express for the backend, MongoDB , and Socket.io for real-time messaging.",
     github: "https://github.com/rrajvardhan/KAIWA",
     live: "https://kaiwa.onrender.com",
   },

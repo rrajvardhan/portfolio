@@ -18,25 +18,25 @@ const AboutMe = ({ scrollToSection }) => {
             </p>
 
             <p className="mb-4 sm:mb-6">
-              primarily a C++ guy, but i've picked up enough frontend (HTML,
-              CSS, JS, React) to throw together UIs that actually behave — just
-              stuff that works.
+              primarily a c++ guy, but i've picked up enough frontend (html,
+              css, javascript, react) to throw together UIs that actually behave
+              — just stuff that works.
               <br />
-              when it comes to data, i have worked with MySQL, MongoDB,
-              Firestore, and Supabase — whatever gets the job done.
+              when it comes to databases, i have worked with mysql, mongodb,
+              firestore, and supabase — whatever gets the job done.
             </p>
 
             <p className="mb-4 sm:mb-6">
               comfortable with java and python for when the situation calls for
               it, but systems programming is where i want to be. aspiring to get
-              really good with go and rust alongside C++. give me something
+              really good with go and rust alongside c++. give me something
               performance-critical to solve — that's the stuff i actually want
               to spend my time on.
             </p>
 
             <p className="mb-4 sm:mb-6">
-              specializing in cybersecurity during my B.Tech — I know how to
-              break stuff on paper and, yes, Google still helps me in practice.
+              specializing in cybersecurity during my b.tech — I know how to
+              break stuff on paper and, yes, google still helps me in practice.
             </p>
 
             <p className="mb-4 sm:mb-6">
