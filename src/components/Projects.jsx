@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 import { projects } from "../data/projects"
 
 const Projects = () => {
+  const [expandedImage, setExpandedImage] = useState(null)
+
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") setExpandedImage(null)
@@ -10,7 +13,6 @@ const Projects = () => {
     return () => window.removeEventListener("keydown", handleEsc)
   }, [])
 
-  const [expandedImage, setExpandedImage] = useState(null)
   return (
     <>
       {/* PROJECTS SECTION  */}
@@ -22,9 +24,12 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 auto-rows-fr">
           {projects.map((project, i) => (
-            <div
+            <motion.div
               key={i}
               className="border-2 border-black p-4 sm:p-6 shadow-md bg-white flex flex-col"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
             >
               <div className="flex justify-between items-center mb-4">
                 <p className="text-xs sm:text-sm font-bold text-neutral-800">
@@ -40,6 +45,7 @@ const Projects = () => {
                   {/\.(gif|png|jpe?g)$/i.test(project.preview) ? (
                     <>
                       <img
+                        loading="lazy"
                         src={project.preview}
                         alt={`${project.title} preview`}
                         className="w-full h-full object-cover cursor-pointer transition-transform group-hover:scale-105"
@@ -93,25 +99,35 @@ const Projects = () => {
                   </a>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        {expandedImage && (
-          <div
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 cursor-zoom-out p-4"
-            onClick={() => setExpandedImage(null)}
-          >
-            <img
-              src={expandedImage}
-              alt="Expanded preview"
-              className="w-auto h-auto max-w-[95vw] max-h-[95vh] shadow-2xl"
-              style={{
-                transform: window.innerWidth > 640 ? "scale(1.5)" : "scale(1)",
-              }}
-            />
-          </div>
-        )}
+        {/* Animated Modal */}
+        <AnimatePresence>
+          {expandedImage && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 cursor-zoom-out p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setExpandedImage(null)}
+            >
+              <motion.img
+                src={expandedImage}
+                alt="Expanded preview"
+                className="w-auto h-auto max-w-[95vw] max-h-[95vh] shadow-2xl"
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{
+                  scale: window.innerWidth > 640 ? 1.5 : 1,
+                  opacity: 1,
+                }}
+                exit={{ scale: 0.5, opacity: 0 }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </main>
     </>
   )
