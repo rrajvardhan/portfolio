@@ -43,6 +43,6 @@ export const projects = [
     subtitle: "How to exit Vim? Still searching...",
     description:
       "My personal Neovim config — a Frankenstein’s monster of hacked-together plugins, random Lua snippets, and weird hacks that somehow just work.",
-    github: "https://github.com/rrajvardhan/neovim-config",
+    github: "https://github.com/rrajvardhan/neovim",
   },
 ]
