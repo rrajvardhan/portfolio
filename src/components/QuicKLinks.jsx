@@ -2,7 +2,7 @@ const QuicKLinks = () => {
   return (
     <>
       {/* QUICK LINKS */}
-      <section className="relative h-0 mt-6 sm:mt-10 snap-start">
+      <section className="relative h-0 mt-6 sm:mt-10 snap-start links">
         {/* Divider */}
         <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-black" />
 

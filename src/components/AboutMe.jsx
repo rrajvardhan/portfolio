@@ -3,7 +3,7 @@ const AboutMe = ({ scrollToSection }) => {
     <>
       {/* ABOUT ME */}
       <section className="bg-white relative flex flex-col items-center justify-center min-h-screen snap-start px-4 sm:px-8 py-20">
-        <div className="max-w-3xl w-full bg-white border-2 border-black shadow-2xl p-4 sm:p-6 md:p-8">
+        <div className="max-w-3xl w-full bg-white border-2 border-black shadow-2xl p-4 sm:p-6 md:p font-bold-8">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 sm:mb-8 tracking-tight text-black select-none">
             About Me
           </h2>
@@ -20,6 +20,15 @@ const AboutMe = ({ scrollToSection }) => {
               primarily a C++ guy, but i've picked up enough frontend (HTML,
               CSS, JS, React) to throw together UIs that actually behave — just
               stuff that works.
+              <br />
+              when it comes to data, i have worked with MySQL, MongoDB,
+              Firestore, and Supabase — whatever gets the job done.
+            </p>
+
+            <p className="mb-4 sm:mb-6">
+              did a cybersecurity specialization during my B.Tech — let’s just
+              say i know how to break stuff on paper, but in practice, google’s
+              still my best friend.
             </p>
 
             <p className="mb-4 sm:mb-6">
