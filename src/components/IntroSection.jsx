@@ -14,8 +14,8 @@ const IntroSection = ({ scrollToSection }) => {
           </h2>
 
           <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-neutral-600 font-medium max-w-2xl">
-            this is the part where i say something clever about myself — but
-            let's be honest, i once got outsmarted by a sliding door.
+            This is the part where I say something clever about myself — but
+            let's be honest, I once got outsmarted by a sliding door.
           </p>
         </div>
 
