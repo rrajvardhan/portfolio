@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { projects } from "../data/projects"
-import QuicKLinks from "./QuicKLinks"
 
 const Projects = () => {
   useEffect(() => {
@@ -18,6 +17,7 @@ const Projects = () => {
       <main className="min-h-screen bg-neutral-400 p-4 sm:p-6 md:p-10 snap-start">
         <h4 className="text-3xl sm:text-4xl md:text-5xl font-black my-4 sm:my-6 tracking-wide">
           Projects
+          <span className="block w-16 h-1 bg-black mt-2 rounded"></span>
         </h4>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 auto-rows-fr">

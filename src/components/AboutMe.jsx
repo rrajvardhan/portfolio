@@ -3,9 +3,10 @@ const AboutMe = ({ scrollToSection }) => {
     <>
       {/* ABOUT ME */}
       <section className="bg-white relative flex flex-col items-center justify-center min-h-screen snap-start px-4 sm:px-8 py-20">
-        <div className="max-w-3xl w-full bg-white border-2 border-black shadow-2xl p-4 sm:p-6 md:p font-bold-8">
+        <div className="max-w-3xl w-full bg-white border-2 border-black shadow-2xl p-4 sm:p-6 md:p-8">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 sm:mb-8 tracking-tight text-black select-none">
             About Me
+            <span className="block w-16 h-1 bg-black mt-2 rounded"></span>
           </h2>
 
           <div className="text-base sm:text-lg text-neutral-700 font-medium leading-relaxed">
