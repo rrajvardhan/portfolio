@@ -26,9 +26,8 @@ const AboutMe = ({ scrollToSection }) => {
             <p className="mb-4 sm:mb-6">
               Comfortable with Java and Python for when the situation calls for
               it, but systems programming is where I want to be. Aspiring to get
-              really good with Go and Rust alongside C++. Give me something
-              performance-critical to solve — that's the stuff I actually want
-              to spend my time on.
+              really good with Go and Rust alongside C++. Hand me something
+              performance-critical to solve — that’s my idea of fun.
             </p>
             <p className="mb-4 sm:mb-6">
               Specializing in cybersecurity during my B.Tech — I know how to
@@ -41,8 +40,8 @@ const AboutMe = ({ scrollToSection }) => {
             </p>
             <p>
               I like things that make me think, break, and rebuild — in roughly
-              that order.
-            </p>{" "}
+              that order, and sometimes all in one night.
+            </p>
           </div>
         </div>
 
