@@ -10,6 +10,13 @@ export default function App() {
   const [showNavbar, setShowNavbar] = useState(false)
   const introRef = useRef(null)
 
+  const scrollToSection = (sectionIndex) => {
+    const sections = document.querySelectorAll(".snap-start")
+    if (sections[sectionIndex]) {
+      sections[sectionIndex].scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setShowNavbar(!entry.isIntersecting),
@@ -23,15 +30,15 @@ export default function App() {
     <div>
       {showNavbar && (
         <div className="fixed top-0 w-full z-50">
-          <Navbar />
+          <Navbar scrollToSection={scrollToSection} />
         </div>
       )}
 
       <div ref={introRef}>
-        <IntroSection />
+        <IntroSection scrollToSection={scrollToSection} />
       </div>
 
-      <AboutMe />
+      <AboutMe scrollToSection={scrollToSection} />
       <QuicKLinks />
       <Projects />
       <Contact />
