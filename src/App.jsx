@@ -1,29 +1,38 @@
-import { useEffect } from "react"
+import { useEffect, useState, useRef } from "react"
 import Navbar from "./components/Navbar"
 import IntroSection from "./components/IntroSection"
 import AboutMe from "./components/AboutMe"
-import QuickLinks from "./components/QuicKLinks"
+import QuicKLinks from "./components/QuicKLinks"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 
 export default function App() {
+  const [showNavbar, setShowNavbar] = useState(false)
+  const introRef = useRef(null)
+
   useEffect(() => {
-    document.documentElement.classList.add("scroll-smooth")
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowNavbar(!entry.isIntersecting),
+      { threshold: 0.5 },
+    )
+    if (introRef.current) observer.observe(introRef.current)
+    return () => observer.disconnect()
   }, [])
 
-  const scrollToSection = (sectionIndex) => {
-    const sections = document.querySelectorAll(".snap-start")
-    if (sections[sectionIndex]) {
-      sections[sectionIndex].scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
-    <div className="min-h-screen overflow-y-scroll snap-y snap-mandatory">
-      <Navbar scrollToSection={scrollToSection} />
-      <IntroSection scrollToSection={scrollToSection} />
-      <AboutMe scrollToSection={scrollToSection} />
-      <QuickLinks />
+    <div>
+      {showNavbar && (
+        <div className="fixed top-0 w-full z-50">
+          <Navbar />
+        </div>
+      )}
+
+      <div ref={introRef}>
+        <IntroSection />
+      </div>
+
+      <AboutMe />
+      <QuicKLinks />
       <Projects />
       <Contact />
     </div>
