@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe"
 import QuicKLinks from "./components/QuicKLinks"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
+import { AnimatePresence, motion } from "framer-motion"
 
 export default function App() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -28,11 +29,19 @@ export default function App() {
 
   return (
     <div>
-      {showNavbar && (
-        <div className="fixed top-0 w-full z-50">
-          <Navbar scrollToSection={scrollToSection} />
-        </div>
-      )}
+      <AnimatePresence>
+        {showNavbar && (
+          <motion.div
+            className="fixed top-0 w-full z-50"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ type: "spring", stiffness: 120, damping: 15 }}
+          >
+            <Navbar scrollToSection={scrollToSection} />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div ref={introRef}>
         <IntroSection scrollToSection={scrollToSection} />

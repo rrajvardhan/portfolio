@@ -12,25 +12,25 @@ const Navbar = ({ scrollToSection }) => {
           <div className="hidden sm:flex gap-2 md:gap-4 mx-auto">
             <button
               onClick={() => scrollToSection(0)}
-              className="hover:underline underline-offset-4 px-2"
+              className="hover:underline cursor-pointer underline-offset-4 px-2"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection(1)}
-              className="hover:underline underline-offset-4 px-2"
+              className="hover:underline cursor-pointer underline-offset-4 px-2"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection(2)}
-              className="hover:underline underline-offset-4 px-2"
+              className="hover:underline cursor-pointer underline-offset-4 px-2"
             >
               Projects
             </button>
             <a
               href="#contact"
-              className="hover:underline underline-offset-4 px-2"
+              className="hover:underline cursor-pointer underline-offset-4 px-2"
             >
               Contact
             </a>
