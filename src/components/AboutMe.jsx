@@ -13,23 +13,26 @@ const AboutMe = ({ scrollToSection }) => {
             <p className="mb-4 sm:mb-6">
               Primarily a C++ guy, but I've picked up enough frontend (HTML,
               CSS, JavaScript, React) to throw together UIs that actually behave
-              — just stuff that works.
+              [just stuff that works].
               <br /> When it comes to databases, I have worked with MySQL,
-              MongoDB, Firestore, and Supabase — whatever gets the job done.
+              MongoDB, Firestore, and Supabase.
+              <span className="italic"> [whatever gets the job done]</span>
             </p>
 
             <p className="mb-4 sm:mb-6">
               Comfortable with Java and Python for when the situation calls for
               it, but systems programming is where I want to be. Aspiring to get
               really good with Go and Rust alongside C++. Hand me something
-              performance-critical to solve — that’s my idea of fun.
+              performance-critical to solve.
+              <span className="italic"> [that's my idea of fun]</span>
             </p>
             <p className="mb-4 sm:mb-6">
               Specializing in cybersecurity during my B.Tech — I know how to
               break stuff on paper and, yes, Google still helps me in practice.
             </p>
             <p className="mb-4 sm:mb-6">
-              I write code that mostly works — sometimes even elegantly.
+              I write code that mostly works.
+              <span className="italic"> [sometimes even elegantly]</span>
               <br className="hidden sm:block" /> Naming projects chaotically is
               a specialty, and staying hydrated remains my most consistent
               hobby.
@@ -40,7 +43,7 @@ const AboutMe = ({ scrollToSection }) => {
               learning something new because it looks fun.
             </p>
             <p>
-              I like things that make me think, break, and rebuild — in roughly
+              I like things that make me think, break, and rebuild in roughly
               that order, and sometimes all in one night.
             </p>
           </div>
