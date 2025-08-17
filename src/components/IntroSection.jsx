@@ -9,8 +9,13 @@ const IntroSection = ({ scrollToSection }) => {
             <br />
             I'm Rajvardhan.
           </h1>
+
           <h2 className="text-xl sm:text-2xl text-neutral-800 font-semibold mt-2">
-            Software Developer
+            {/* Software Developer */}
+            Final Year B.Tech CSE Student
+            <span className="text-lg text-neutral-600 font-medium ml-3">
+              {/* | Final Year B.Tech CSE Student */}
+            </span>
           </h2>
 
           <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-neutral-600 font-medium max-w-2xl">

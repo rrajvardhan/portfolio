@@ -5,7 +5,7 @@ export const projects = [
     title: "SH!T",
     subtitle: "2D Game Engine",
     description:
-      "Built my own engine instead of using Unity — painful, but now I know how engines work (and why games crash). Modular C++ core with ECS, ImGui tools, Lua scripting, and JSON-based scene/entity serialization. Handles input, audio, rendering, collisions, and physics systems",
+      "Built my own engine instead of using Unity — painful, but now I know how engines work (and why games crash). Modular C++ core with ECS, ImGui tools, Lua scripting, and JSON-based scene/entity serialization. Handles input, audio, rendering, collisions, and physics systems.",
     github: "https://github.com/rrajvardhan/SH-T",
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
     title: "Fossil Fury",
     subtitle: "2D Side-scroller Prototype",
     description:
-      "Built with JavaScript — side-scrolling, shooting, collisions, and basic enemy logic. Simple experiment, but a solid dive into game loops and rendering without an engine.",
+      "Simple Experiment that brute-forced a browser into running a game loop with pure JavaScript and Canvas API — featuring side-scrolling, shooting, collisions, and basic enemy logic.",
     github: "https://github.com/rrajvardhan/fossil-fury",
     live: "https://fossilfury.onrender.com",
   },
@@ -32,7 +32,7 @@ export const projects = [
     title: "KAIWA",
     subtitle: "Real-time Chat App",
     description:
-      "Real-time chat with the usual suspects: React + Tailwind frontend, Node/Express backend, MongoDB for persistence, and Socket.io keeping messages instant. Just signup, login, and message.",
+      " With the usual suspects: React + Tailwind frontend, Node/Express backend, MongoDB for persistence, and Socket.io keeping messages instant. Just signup, login, and message.",
     github: "https://github.com/rrajvardhan/KAIWA",
     live: "https://kaiwa.onrender.com",
   },

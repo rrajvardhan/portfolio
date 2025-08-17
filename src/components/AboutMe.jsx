@@ -11,18 +11,13 @@ const AboutMe = ({ scrollToSection }) => {
 
           <div className="text-base sm:text-lg text-neutral-700 font-medium leading-relaxed">
             <p className="mb-4 sm:mb-6">
-              I write code that mostly works — sometimes even elegantly.
-              <br className="hidden sm:block" /> Naming projects chaotically is
-              a specialty, and staying hydrated remains my most consistent
-              hobby.
-            </p>
-            <p className="mb-4 sm:mb-6">
               Primarily a C++ guy, but I've picked up enough frontend (HTML,
               CSS, JavaScript, React) to throw together UIs that actually behave
               — just stuff that works.
               <br /> When it comes to databases, I have worked with MySQL,
               MongoDB, Firestore, and Supabase — whatever gets the job done.
             </p>
+
             <p className="mb-4 sm:mb-6">
               Comfortable with Java and Python for when the situation calls for
               it, but systems programming is where I want to be. Aspiring to get
@@ -32,6 +27,12 @@ const AboutMe = ({ scrollToSection }) => {
             <p className="mb-4 sm:mb-6">
               Specializing in cybersecurity during my B.Tech — I know how to
               break stuff on paper and, yes, Google still helps me in practice.
+            </p>
+            <p className="mb-4 sm:mb-6">
+              I write code that mostly works — sometimes even elegantly.
+              <br className="hidden sm:block" /> Naming projects chaotically is
+              a specialty, and staying hydrated remains my most consistent
+              hobby.
             </p>
             <p className="mb-4 sm:mb-6">
               Curiosity drives me — whether it's untangling weird bugs,
