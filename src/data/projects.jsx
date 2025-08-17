@@ -5,7 +5,7 @@ export const projects = [
     title: "SH!T",
     subtitle: "2D Game Engine",
     description:
-      "Modular 2D game engine built in C++ with SDL2. Uses ECS architecture, ImGui for UI, Lua scripting via Sol2, and JSON for scene/entity serialization. Includes input, audio, rendering , collision and physics systems.",
+      "Built my own engine instead of using Unity — painful, but now I know how engines work (and why games crash). Modular C++ core with ECS, ImGui tools, Lua scripting, and JSON-based scene/entity serialization. Handles input, audio, rendering, collisions, and physics systems",
     github: "https://github.com/rrajvardhan/SH-T",
   },
   {
@@ -13,7 +13,7 @@ export const projects = [
     title: "Chess",
     subtitle: "2D Game",
     description:
-      "Turn-based chess game using C++ and SDL2. Supports legal move logic, piece selection, and board rendering with basic UI feedback.",
+      "Made a chess game that doesn’t cheat (unlike me in Bullet games). Written in C++ and SDL2 — with move validation, piece logic, board rendering, and UI feedback.",
     github: "https://github.com/rrajvardhan/sdl-chess",
   },
 
@@ -22,7 +22,7 @@ export const projects = [
     title: "Fossil Fury",
     subtitle: "2D Side-scroller Prototype",
     description:
-      "A 2D side-scroller shooting game prototype made with JavaScript.",
+      "Built with JavaScript — side-scrolling, shooting, collisions, and basic enemy logic. Simple experiment, but a solid dive into game loops and rendering without an engine.",
     github: "https://github.com/rrajvardhan/fossil-fury",
     live: "https://fossilfury.onrender.com",
   },
@@ -32,7 +32,7 @@ export const projects = [
     title: "KAIWA",
     subtitle: "Real-time Chat App",
     description:
-      "A real-time chat application built with React for, Node.js and Express for the backend, MongoDB , and Socket.io for real-time messaging.",
+      "Real-time chat with the usual suspects: React + Tailwind frontend, Node/Express backend, MongoDB for persistence, and Socket.io keeping messages instant. Just signup, login, and message.",
     github: "https://github.com/rrajvardhan/KAIWA",
     live: "https://kaiwa.onrender.com",
   },
