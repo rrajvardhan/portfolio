@@ -12,8 +12,8 @@ const AboutMe = ({ scrollToSection }) => {
           <div className="text-base sm:text-lg text-neutral-700 font-medium leading-relaxed">
             <p className="mb-4 sm:mb-6">
               Primarily a C++ guy, but I've picked up enough frontend (HTML,
-              CSS, JavaScript, React) to throw together UIs that actually behave
-              [just stuff that works].
+              CSS, JavaScript, React) to throw together UIs that actually behave.
+              <span className="italic"> [just stuff that works]</span>
               <br /> When it comes to databases, I have worked with MySQL,
               MongoDB, Firestore, and Supabase.
               <span className="italic"> [whatever gets the job done]</span>
