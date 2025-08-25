@@ -2,7 +2,7 @@
 export const projects = [
   {
     preview: "/engine-demo.gif",
-    title: "SH!T",
+    title: "SH-T",
     subtitle: "2D Game Engine",
     description:
       "Built my own engine instead of using Unity — painful, but now I know how engines work (and why games crash). Modular C++ core with ECS, ImGui tools, Lua scripting, and JSON-based scene/entity serialization. Handles input, audio, rendering, collisions, and physics systems.",
