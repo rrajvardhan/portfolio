@@ -21,15 +21,15 @@ const AboutMe = ({ scrollToSection }) => {
             </p>
 
             <p className="mb-4 sm:mb-6">
-              Comfortable with Java and Python for when the situation calls for
-              it, but systems programming is where I want to be. Aspiring to get
-              really good with Go and Rust alongside C++. Hand me something
+              Comfortable with Java and Python when needed, but systems
+              programming is where I want to be. I’m working to get really good
+              with Go and Rust alongside C++. Hand me something
               performance-critical to solve.
               <span className="italic"> [that's my idea of fun]</span>
             </p>
             <p className="mb-4 sm:mb-6">
-              Specializing in cybersecurity during my B.Tech — I know how to
-              break stuff on paper and, yes, Google still helps me in practice.
+              Specialized in cybersecurity during my B.Tech — so I know the
+              theory of breaking systems, even if I enjoy building them more.
             </p>
             <p className="mb-4 sm:mb-6">
               I write code that mostly works.
