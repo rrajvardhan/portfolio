@@ -14,7 +14,7 @@ const QuicKLinks = () => {
                 href: "https://github.com/rrajvardhan",
                 external: true,
               },
-              { name: "Resume", href: "/resume.pdf", external: true },
+              //{ name: "Resume", href: "/resume.pdf", external: true },
             ].map((link) => (
               <a
                 key={link.name}
