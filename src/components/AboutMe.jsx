@@ -16,7 +16,7 @@ const AboutMe = ({ scrollToSection }) => {
               behave.
               {/* <span className="italic"> [just stuff that works]</span> */}
               <br /> When it comes to databases, I have worked with MySQL,
-              MongoDB, Firestore, and Supabase.
+              MongoDB, and Firestore.
               {/* <span className="italic"> [whatever gets the job done]</span> */}
             </p>
 
