@@ -16,16 +16,14 @@ const AboutMe = ({ scrollToSection }) => {
               behave.
               {/* <span className="italic"> [just stuff that works]</span> */}
               <br /> When it comes to databases, I have worked with MySQL,
-              MongoDB, Firestore, and Supabase.
+              MongoDB, and Firestore.
               {/* <span className="italic"> [whatever gets the job done]</span> */}
             </p>
 
             <p className="mb-4 sm:mb-6">
               Comfortable with Java and Python when needed, but systems
-              programming is where I want to be. I’m working to get really good
-              with Go and Rust alongside C++. Hand me something
-              performance-critical to solve.
-              <span className="italic"> [that's my idea of fun]</span>
+              programming is where I want to be, Hand me something
+              performance-critical to solve that's my idea of fun].
             </p>
             <p className="mb-4 sm:mb-6">
               Specialized in cybersecurity during my B.Tech — so I know the
