@@ -26,13 +26,21 @@ export const projects = [
     github: "https://github.com/rrajvardhan/fossil-fury",
     live: "https://fossilfury.onrender.com",
   },
+  {
+    preview: "/bunkr-demo.gif",
+    title: "BUNKR",
+    subtitle: "Secure LAN File Sharing",
+    description:
+      "Why send files through the internet when my devices are sitting right next to each other? Also wanted an excuse to build something in Go. Pure Go TUI tool that encrypts and shares files over your local network — with password protection and zero cloud dependency.",
+    github: "https://github.com/rrajvardhan/bunkr",
+  },
 
   {
     preview: "/kaiwa-demo.png",
     title: "KAIWA",
     subtitle: "Real-time Chat App",
     description:
-      " With the usual suspects: React + Tailwind frontend, Node/Express backend, MongoDB for persistence, and Socket.io keeping messages instant. Just signup, login, and message.",
+      "With the usual suspects: React + Tailwind frontend, Node/Express backend, MongoDB for persistence, and Socket.io keeping messages instant. Just signup, login, and message.",
     github: "https://github.com/rrajvardhan/KAIWA",
     live: "https://kaiwa.onrender.com",
   },
