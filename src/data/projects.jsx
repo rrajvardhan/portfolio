@@ -37,7 +37,7 @@ export const projects = [
 
   {
     preview: "/kaiwa-demo.png",
-    title: "KAIWA",
+    title: "Kaiwa",
     subtitle: "Real-time Chat App",
     description:
       "With the usual suspects: React + Tailwind frontend, Node/Express backend, MongoDB for persistence, and Socket.io keeping messages instant. Just signup, login, and message.",
