@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     preview: "/bunkr-demo.gif",
-    title: "BUNKR",
+    title: "Bunkr",
     subtitle: "Secure LAN File Sharing",
     description:
       "Why send files through the internet when my devices are sitting right next to each other? Also wanted an excuse to build something in Go. Pure Go TUI tool that encrypts and shares files over your local network — with password protection and zero cloud dependency.",
