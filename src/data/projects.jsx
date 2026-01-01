@@ -9,22 +9,12 @@ export const projects = [
     github: "https://github.com/rrajvardhan/SH-T",
   },
   {
-    preview: "/chess-demo.gif",
-    title: "Chess",
-    subtitle: "2D Game",
+    preview: "/tafel-demo.png",
+    title: "Tafel",
+    subtitle: "Desktop Whiteboard Application",
     description:
-      "Made a chess game that doesn’t cheat (unlike me in Bullet games). Written in C++ and SDL2 — with move validation, piece logic, board rendering, and UI feedback.",
-    github: "https://github.com/rrajvardhan/sdl-chess",
-  },
-
-  {
-    preview: "/fossilfury-demo.gif",
-    title: "Fossil Fury",
-    subtitle: "2D Side-scroller Prototype",
-    description:
-      "Simple Experiment that brute-forced a browser into running a game loop with pure JavaScript and Canvas API — featuring side-scrolling, shooting, collisions, and basic enemy logic.",
-    github: "https://github.com/rrajvardhan/fossil-fury",
-    live: "https://fossilfury.onrender.com",
+      "Written in C++ using Qt Widgets. Provides a canvas for freehand drawing with basic tools such as brush controls, erasing, and spline-based drawing.",
+    github: "https://github.com/rrajvardhan/tafel",
   },
   {
     preview: "/bunkr-demo.gif",
@@ -34,7 +24,6 @@ export const projects = [
       "Why send files through the internet when my devices are sitting right next to each other? Also wanted an excuse to build something in Go. Pure Go TUI tool that encrypts and shares files over your local network — with password protection and zero cloud dependency.",
     github: "https://github.com/rrajvardhan/bunkr",
   },
-
   {
     preview: "/kaiwa-demo.png",
     title: "Kaiwa",
@@ -45,6 +34,23 @@ export const projects = [
     live: "https://kaiwa.onrender.com",
   },
 
+  {
+    preview: "/chess-demo.gif",
+    title: "Chess",
+    subtitle: "2D Game",
+    description:
+      "Made a chess game that doesn’t cheat (unlike me in Bullet games). Written in C++ and SDL2 — with move validation, piece logic, board rendering, and UI feedback.",
+    github: "https://github.com/rrajvardhan/sdl-chess",
+  },
+  {
+    preview: "/fossilfury-demo.gif",
+    title: "Fossil Fury",
+    subtitle: "2D Side-scroller Prototype",
+    description:
+      "Simple Experiment that brute-forced a browser into running a game loop with pure JavaScript and Canvas API — featuring side-scrolling, shooting, collisions, and basic enemy logic.",
+    github: "https://github.com/rrajvardhan/fossil-fury",
+    live: "https://fossilfury.onrender.com",
+  },
   {
     preview: "/neovim-config.gif",
     title: "Neovim Config",
