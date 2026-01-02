@@ -22,28 +22,23 @@ const AboutMe = ({ scrollToSection }) => {
 
             <p className="mb-4 sm:mb-6">
               Comfortable with Java and Python when needed, but systems
-              programming is where I want to be, Hand me something
-              performance-critical to solve that's my idea of fun].
-            </p>
-            <p className="mb-4 sm:mb-6">
-              Specialized in cybersecurity during my B.Tech — so I know the
+              programming is where I want to be.
+              <br className="hidden sm:block" />
+              Specialized in cybersecurity during my B.Tech , so I know the
               theory of breaking systems, even if I enjoy building them more.
-            </p>
-            <p className="mb-4 sm:mb-6">
-              I write code that mostly works.
-              <span className="italic"> [sometimes even elegantly]</span>
-              <br className="hidden sm:block" /> Naming projects chaotically is
-              a specialty, and staying hydrated remains my most consistent
-              hobby.
             </p>
             <p className="mb-4 sm:mb-6">
               Curiosity drives me — whether it's untangling weird bugs,
               experimenting with ideas that might fail spectacularly, or
               learning something new because it looks fun.
             </p>
-            <p>
+            <p className="mb-4 sm:mb-6">
               I like things that make me think, break, and rebuild in roughly
               that order, and sometimes all in one night.
+            </p>
+            <p className="mb-4 sm:mb-6">
+              Naming projects chaotically is a specialty, and staying hydrated
+              remains my most consistent hobby.
             </p>
           </div>
         </div>
